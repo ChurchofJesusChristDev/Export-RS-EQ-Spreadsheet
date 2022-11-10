@@ -12,7 +12,7 @@ Very easy to do:
    - or Ctrl + Shift + I (on Windows)
 4. Copy and Paste this into the console
    ```js
-   var members = $$('.members tr').map(function ($tr) {
+   var members = $$('.member-list tr').map(function ($tr) {
      var $$td = $tr.querySelectorAll('td');
      if (!$$td.length) { $$td = $tr.querySelectorAll('th'); }
      return Array.prototype.slice.apply($$td).map(function ($td) {
